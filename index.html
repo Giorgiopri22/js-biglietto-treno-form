@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="box">
+        <h2>Biglietto Treno</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name"><br><br>
+            <label for="surname">Cognome:</label>
+            <input type="text" id="surname"><br><br>
+            <label for="km">Chilometri:</label>
+            <input type="number" min="1" max="999" id="km"><br><br>
+            <label for="eta">Fascia d'età:</label>
+            <select name="Minorenne" id="age"> 
+                <option value="1">Minorenne</option>
+                <option value="65">Over 65</option>
+                <option value="35">Maggiorenne</option>
+            </select><br><br>
+            <button type="button" onclick="generateTicket()">Genera biglietto</button>
+            <button type="button" onclick="clearContent()">Svuota contenuto</button>
+        </form>
+        <br>
+    </div>
+    <div id="ticket-price"></div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
